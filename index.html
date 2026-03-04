@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1>🌡️ Temperature Converter</h1>
+      </div>
+      
+      <div class="converter-box">
+        <div class="row">
+          <div class="col">
+            <label>From</label>
+            <input type="number" id="tempInput" placeholder="0" step="0.1">
+          </div>
+          <div class="swap-col">
+            <button class="swap-btn" id="swapBtn" title="Swap">⇄</button>
+          </div>
+          <div class="col">
+            <label>To</label>
+            <div class="result-preview" id="resultPreview">--</div>
+          </div>
+        </div>
+        <div class="row selects">
+          <select id="fromUnit">
+            <option value="celsius" selected>°C Celsius</option>
+            <option value="fahrenheit">°F Fahrenheit</option>
+            <option value="kelvin">K Kelvin</option>
+          </select>
+          <select id="toUnit">
+            <option value="celsius">°C Celsius</option>
+            <option value="fahrenheit" selected>°F Fahrenheit</option>
+            <option value="kelvin">K Kelvin</option>
+          </select>
+        </div>
+      </div>
+
+      <button onclick="convert()" class="convert-btn">Convert</button>
+      
+      <div class="formula" id="formula">Enter temperature and click Convert</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
