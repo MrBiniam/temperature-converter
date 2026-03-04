@@ -109,3 +109,11 @@ toUnit.addEventListener("change", () => {
 document.addEventListener("DOMContentLoaded", () => {
     tempInput.focus();
 });
+
+// Reset function
+function resetConverter() {
+    tempInput.value = "";
+    resultPreview.textContent = "--";
+    formula.textContent = "Enter temperature and click Convert";
+    tempInput.focus();
+}

@@ -16,31 +16,31 @@ body {
 
 .container {
   width: 100%;
-  max-width: 480px;
+  max-width: 550px;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.98);
   border-radius: 24px;
-  padding: 35px 40px;
+  padding: 50px 55px;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
 .header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .header h1 {
   color: #333;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .converter-box {
   background: #f8f9fa;
   border-radius: 16px;
-  padding: 30px;
+  padding: 40px;
   margin-bottom: 25px;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -79,8 +79,8 @@ label {
 
 input[type="number"] {
   width: 100%;
-  padding: 16px 14px;
-  font-size: 1.8rem;
+  padding: 20px 18px;
+  font-size: 2.2rem;
   font-weight: 700;
   border: 2px solid #e0e0e0;
   border-radius: 12px;
@@ -89,7 +89,7 @@ input[type="number"] {
   transition: all 0.3s ease;
   background: #fff;
   box-shadow: 0 8px 20px rgba(17, 24, 39, 0.06);
-  height: 60px;
+  height: 70px;
 }
 
 input[type="number"]:focus {
@@ -112,15 +112,15 @@ input[type="number"] {
 
 .result-preview {
   width: 100%;
-  padding: 16px;
-  font-size: 1.8rem;
+  padding: 20px;
+  font-size: 2.2rem;
   font-weight: 700;
   background: white;
   border: 2px solid #667eea;
   border-radius: 12px;
   color: #667eea;
   text-align: center;
-  min-height: 60px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,13 +128,13 @@ input[type="number"] {
 }
 
 .swap-btn {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -153,8 +153,8 @@ input[type="number"] {
 
 select {
   flex: 1;
-  padding: 12px 14px;
-  font-size: 1rem;
+  padding: 16px 18px;
+  font-size: 1.1rem;
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   outline: none;
@@ -173,9 +173,9 @@ select:hover {
 }
 
 .convert-btn {
-  width: 100%;
-  padding: 16px;
-  font-size: 1.1rem;
+  flex: 1;
+  padding: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -185,13 +185,40 @@ select:hover {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 20px;
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 .convert-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  width: 60px;
+  height: 60px;
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 14px;
+  font-size: 1.8rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn:hover {
+  background: #ff6b6b;
+  border-color: #ff6b6b;
+  color: white;
+  transform: rotate(-180deg);
 }
 
 .formula {
